@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Home</title>
+    <title>Hjemmesiden</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
-    <link rel="image/x-icon" href="favicon.png" />
+    <link rel="image/x-icon" href="favicon.ico" />
     <script type="module" src="script.js"></script>
   </head>
   <body>
     <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+      <a id="navLogo" href="/"><img src="perspectiveArchitectureFull.png" alt=""></a>
+      <a class="navLink" href="/" aria-current="page">Hjemmesiden</a>
+      <a class="navLink" href="/page2.html">Analyser</a>
     </nav>
     <main>
-      <h1>Home page</h1>
+      <h1>Valg av fargepalett og typografi</h1>
+
+      <section id="paletteShowcase">
+        <div class="paletteElement" id="palettePrimary"></div>
+        <div class="paletteElement" id="paletteLight"></div>
+        <div class="paletteElement" id="paletteDark"></div>
+      </section>
+
+      <p>
+        Valgt en veldig enkel fargepalett for å vise en profesjonell vinkling på bedriften, samtiding som den er moderne.
+        Fontene som er brukt er på lik linje for å vise at det er en seriøs bedrift, men er også annerledes fra normen med at overskriftene er Sans-Serif, mens grunnteksten er Serif.
+      </p>
+      <hr>
+
+
+
+      <h1>Visjon</h1>
+      <h3>Byggesteinen for det neste århundret i Norge</h3>
+      <p>Visjonen og målet til bedriften er å påvirke hvordan arkitekturen i Norge ser ut over lengre tid, og gjerne få deres arbeid til å bli gullstandarden</p>
+      <p>Dette kan gjennomføres ved å slå konkurrenter på stil og kvalitet, samtiding som å by lavt nok til å vinne bud på prestisjeprosjekter</p>
+
     </main>
   </body>
 </html>

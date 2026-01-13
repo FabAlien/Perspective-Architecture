@@ -1,7 +1,8 @@
 * {
   box-sizing: border-box;
   --primaryColor: #45b3ff;
-  --secondaryColor:
+  --secondaryColor: #FFB445;
+  --darkColor:  #627380;
 }
 
 body {
@@ -11,18 +12,23 @@ body {
   background-color: white;
 }
 
+p {
+  font-family: 'Times New Roman', Times, serif;
+  width: 50%;
+}
+
 nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   padding: 0.5rem;
   gap: 0.5rem;
   border-bottom: solid 1px #aaa;
   background-color: #eee;
 }
 
-nav a {
+.navLink {
   display: inline-block;
   min-width: 9rem;
   padding: 0.5rem;
@@ -30,12 +36,32 @@ nav a {
   border: solid 1px #aaa;
   text-align: center;
   text-decoration: none;
-  color: #555;
+  color: var(--darkColor);
+  height: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+hr {
+  width: 100%;
+}
+
+#navLogo {
+  height: 5vh;
+}
+
+#navLogo img {
+  height: 100%;
 }
 
 nav a[aria-current='page'] {
-  color: #000;
-  background-color: #d4d4d4;
+  color: white;
+  background-color: var(--primaryColor);
 }
 
 main {
@@ -45,4 +71,65 @@ main {
 h1 {
   font-weight: bold;
   font-size: 1.5rem;
+}
+
+#paletteShowcase {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+}
+
+.paletteElement {
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  border: black 2px solid;
+}
+
+#palettePrimary {
+  background-color: var(--primaryColor);
+}
+
+#paletteLight {
+  background-color: white;
+}
+
+#paletteDark {
+  background-color: var(--darkColor);
+}
+
+#swotSection {
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  place-items: center;
+}
+
+.swotCard {
+  width: 90%;
+  height: 90%;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+.swotCard h2 {
+  text-align: center;
+}
+
+#swotStrengths {
+  background-color: var(--primaryColor);
+}
+
+#swotWeaknesses {
+  background-color: #78CFC6;
+}
+
+#swotOpportunities {
+  background-color: #FADC6A;
+}
+
+#swotThreats {
+  background-color: #FDB3A2;
 }
