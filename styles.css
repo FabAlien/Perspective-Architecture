@@ -14,7 +14,6 @@ body {
 
 p {
   font-family: 'Times New Roman', Times, serif;
-  width: 50%;
 }
 
 nav {
@@ -45,6 +44,10 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.mainParagraph {
+  width: 50%;
 }
 
 hr {
@@ -132,4 +135,67 @@ h1 {
 
 #swotThreats {
   background-color: #FDB3A2;
+}
+
+#persona1 {
+  
+}
+
+#persona2 {
+
+}
+
+.personaOverview {
+  width: 50%;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+  padding: 5px;
+}
+
+.personaOverview div {
+  background-color: var(--secondaryColor);
+  border-radius: 25px;
+}
+
+.personaDiv h4 {
+  width: 100%;
+}
+
+.personaDiv p {
+  width: 100%;
+}
+
+.personaImage {
+  grid-column: 1 / 1;
+  grid-row: 1 / span 2;
+  text-align: center;
+}
+
+.personaImage p {
+  width: 100%;
+  height: auto;
+}
+
+.personaImg {
+  object-fit: contain;
+  max-width: 90%;
+  padding: 5%;
+}
+
+.personaDemographics {
+  grid-column: 2 / span 3;
+  padding: 5px;
+}
+
+.personaGoals {
+  grid-column: 2 / span 3;
+  padding: 5px;
+}
+
+.personaStruggles {
+ grid-column: 1 / span 4;
+ padding: 5px;
 }
